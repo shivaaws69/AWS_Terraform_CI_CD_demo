@@ -37,6 +37,6 @@ jobs:
         run: terraform plan -lock=false #-no-color
 
       - name: Terraform Apply
-        run: terraform apply -auto-approve
+        run: terraform apply -lock=false -auto-approve
     # - name: Terraform Destroy 
     #   run: terrafrom destroy -auto-approve  
